@@ -5,8 +5,6 @@ from datetime import date
 import datetime as dt
 import pandas_ta as ta
 import datetime
-import talib
-
 
 
 
