@@ -62,7 +62,7 @@ for stkname in list1:
 	data= yf.Ticker(stkname)
 
 	data_historical = data.history(start=date1-dt.timedelta(100), end=date1, interval=timeInterval)
-	data_historical['rsi']=talib.RSI(data_historical['Close'],14)
+	data_historical['rsi']=ta.rsi(data_historical['Close'],14)
 	# data_historical['fastk'],data_historical['fastd']=talib.STOCHRSI(data_historical['Close'], 14, 3, 3, 0)
 	script_name.append(str(stkname))
 
